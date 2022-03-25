@@ -1,0 +1,12 @@
+.product-body{
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.product-body img{
+    width: 180px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
