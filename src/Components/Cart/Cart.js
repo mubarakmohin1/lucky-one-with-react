@@ -4,10 +4,7 @@ import React from 'react';
 
 
 const Cart = ({cart}) => {
-
-    const clearAllItem = () =>{
-        
-    }
+ 
    
     return (
         <div>
@@ -15,10 +12,7 @@ const Cart = ({cart}) => {
             {
         cart.map(item => <p key={item.id}> {item.name}</p>)
             }
-            <div>
-                <button className='Chose-btn'>Choose one</button> <br />
-                <button className='Clear-btn' onClick={()=>clearAllItem()}>New cart</button>
-            </div>
+            
         </div>
     );
 };

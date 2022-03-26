@@ -11,7 +11,7 @@
     margin: 100px 50px;
 }
 .order-container{
-    /* background-color: gray; */
+    background-color: rgb(233, 222, 222);
     margin-top: 50px;
     height: 500px;
     position: sticky;
@@ -22,6 +22,15 @@
     margin-top: 20px;
     /* color: white; */
 }
+ .order-container button{
+     background-color: aqua;
+     border-radius: 5px;
+     width: 100px;
+     margin-left: 20px;
+ }
+ .order-container button:hover{
+     background-color: orangered;
+ }
 
 @media screen and (max-width:300px) {
     .show-container{

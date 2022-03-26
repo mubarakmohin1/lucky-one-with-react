@@ -33,6 +33,10 @@ const Component = () => {
             </div>
             <div className="order-container">
                <Cart cart={cart}></Cart>
+               <div>
+                <button className='Chose-btn'>Choose one</button> <br />
+                <button className='Clear-btn' onClick={() => setCart([])}>New cart</button>
+            </div>
             </div>
         </div>
     );
