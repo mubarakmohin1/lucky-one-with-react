@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductDetails from '../prodDetails/ProductDetails';
-// import {chosehandle} from '../Cart/Cart'
+ 
 import Cart from '../Cart/Cart'
 import './Component.css'
 
@@ -17,6 +17,17 @@ const Component = () => {
             const newCart = [...cart,product];
             setCart(newCart);
      }
+    
+     const chooseHandle =()=>{
+       
+     for(const element of cart){
+         const myArray = [element.name];
+         const random = Math.floor(Math.random()* myArray.length)
+        alert(myArray[random])
+        }
+         
+         }
+      
       
     return (
         <div className='book-container'>
@@ -24,15 +35,15 @@ const Component = () => {
             <div className="show-container">
                  
                 {
-                     products.map(product => <ProductDetails key ={product} product={product} orderHandleClick={orderHandleClick}></ProductDetails>)
+                     products.map(product => <ProductDetails key ={product.id} product={product} orderHandleClick={orderHandleClick}></ProductDetails>)
                 }
 
             </div>
             <div className="order-container">
                <Cart cart={cart}></Cart>
                <div>
-                <button className='Chose-btn'>Choose one</button> <br />
-                <button className='Clear-btn' onClick={() => setCart([])}>New cart</button>
+                <button className='Chose-btn' onClick={()=>chooseHandle()}>Choose one</button> <br />
+                <button className='Clear-btn' key={cart.id} onClick={() => setCart([])}>New cart</button>
             </div>
             </div>
         </div>

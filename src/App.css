@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.book-collection{
+margin-left: 300px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

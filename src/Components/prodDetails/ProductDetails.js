@@ -18,7 +18,7 @@ const ProductDetails = ({product,orderHandleClick}) => {
           </div>
         
 
-          <button className='btn-class' onClick={()=>orderHandleClick(product)}>Add To Cart <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></button>
+          <button className='btn-class'key={id} onClick={()=>orderHandleClick(product)}>Add To Cart <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></button>
         </div>
     );
 };
