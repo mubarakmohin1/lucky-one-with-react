@@ -12,7 +12,10 @@
     margin-top: 10px;
 }
 .product-info{
-    margin: 20px 15px;
+    margin-left: 10px;
+}
+.price{
+padding-bottom: 10px;
 }
 .btn-class{
     width: 100%;

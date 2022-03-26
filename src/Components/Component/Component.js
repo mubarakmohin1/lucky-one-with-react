@@ -17,17 +17,14 @@ const Component = () => {
             const newCart = [...cart,product];
             setCart(newCart);
      }
-    //  const chosehandle = ()=>{
-        //   setCart([])
-    //  }
-        
+      
     return (
         <div className='book-container'>
             
             <div className="show-container">
                  
                 {
-                     products.map(product => <ProductDetails key ={product.id} product={product} orderHandleClick={orderHandleClick}></ProductDetails>)
+                     products.map(product => <ProductDetails key ={product} product={product} orderHandleClick={orderHandleClick}></ProductDetails>)
                 }
 
             </div>

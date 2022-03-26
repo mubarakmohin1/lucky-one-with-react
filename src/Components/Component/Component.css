@@ -31,6 +31,9 @@
  .order-container button:hover{
      background-color: orangered;
  }
+ .ans-qsn b{
+     margin-left: 20px;
+ }
 
 @media screen and (max-width:300px) {
     .show-container{
